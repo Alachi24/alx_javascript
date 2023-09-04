@@ -1,3 +1,3 @@
-exports.add = function () {
+exports.add = function (a, b) {
   console.log(a + b);
 };
