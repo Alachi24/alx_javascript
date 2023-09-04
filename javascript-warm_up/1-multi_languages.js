@@ -1,6 +1,6 @@
 let firstLine = "C is fun";
 let secondLine = "Python is cool";
-let thirdLine = "javaScript is amazing";
+let thirdLine = "JavaScript is amazing";
 
 console.log(firstLine);
 console.log(secondLine);
