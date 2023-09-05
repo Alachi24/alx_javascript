@@ -1,3 +1,9 @@
-exports.multiply = function (a, b) {
-  return a * b;
-};
+let callMeMoby = [];
+function asset(x, itsFunction) {
+  for (i = 0; i < x.length; i++) {
+    itsFunction();
+  }
+}
+
+//Export the function to enable visibility outside
+module.exports.callMeMoby = callMeMoby;
