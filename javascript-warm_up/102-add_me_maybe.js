@@ -1,5 +1,5 @@
 function addMeMaybe(number, theFunction) {
-  for (let i = o; i < number; i++) {
+  for (let i = 0; i < number; i++) {
     theFunction();
   }
 }
