@@ -1,5 +1,5 @@
 function addMeMaybe(number, theFunction) {
-  newNumber = number++;
+  newNumber = number + 1;
   theFunction(newNumber);
 }
 
