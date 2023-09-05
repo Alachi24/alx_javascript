@@ -1,5 +1,3 @@
-let callMeMoby = [];
-
-for (i = 0; i < callMeMoby.length; i++) {
-  console.log(callMeMoby[i]);
-}
+exports.multiply = function (a, b) {
+  return a * b;
+};
