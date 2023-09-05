@@ -1,1 +1,3 @@
-let myVar = 333;
+let myVar = 89;
+
+myVar = 333;
