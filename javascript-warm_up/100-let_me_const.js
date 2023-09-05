@@ -1,5 +1,1 @@
-let myVar = 89;
-
-myVar = 333;
-
-console.log(myVar);
+let myVar = 333;
