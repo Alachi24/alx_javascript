@@ -1,6 +1,6 @@
 function callMeMoby(x, itsFunction) {
   for (let i = 0; i < x.length; i++) {
-    itsFunction();
+    console.log(itsFunction[i]);
   }
 }
 
