@@ -1,4 +1,3 @@
-let callMeMoby = [];
 function asset(x, itsFunction) {
   for (i = 0; i < x.length; i++) {
     itsFunction();
@@ -6,4 +5,4 @@ function asset(x, itsFunction) {
 }
 
 //Export the function to enable visibility outside
-module.exports.callMeMoby = callMeMoby;
+module.exports.asset = asset;
