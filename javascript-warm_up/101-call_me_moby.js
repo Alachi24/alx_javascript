@@ -1,5 +1,5 @@
 function asset(x, itsFunction) {
-  for (i = 0; i < x; i++) {
+  for (let i = 0; i < x; i++) {
     itsFunction();
   }
 }
