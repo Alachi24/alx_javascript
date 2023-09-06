@@ -1,3 +1,4 @@
+#!/usr/bin/node
 // create a class with its constructor
 class Rectangle {
   constructor(w, h) {
