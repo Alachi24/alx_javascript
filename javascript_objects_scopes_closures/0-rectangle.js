@@ -1,5 +1,5 @@
-class Rectangle {
-  Rectangle() {}
-}
+// create an empty class
+class Rectangle {}
 
-const r1 = newRectangle();
+// create a module used for exportation
+module.exports = Rectangle;
