@@ -1,8 +1,8 @@
 // create a class Square that inherits from Square in 5-square.js
 //imported Square from "5-square.js"
-const Square = require("./5-square");
+const square = require("./5-square");
 
-class Square extends Square {
+class Square extends square {
   constructor(size) {
     super(size, size);
   }
