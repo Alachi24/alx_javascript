@@ -8,12 +8,12 @@ class Rectangle {
     }
   }
   //created a print() method using a nested loop to iterate over the rows & columns of the rectangle.
-  //adding an 'x' character.
+  //adding an 'X' character.
   print() {
     for (let i = 0; i < this.height; i++) {
       let row = "";
       for (let j = 0; j < this.width; j++) {
-        row += "x";
+        row += "X";
       }
       console.log(row);
     }
