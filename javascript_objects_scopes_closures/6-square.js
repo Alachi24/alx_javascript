@@ -7,16 +7,29 @@ class Square extends newSquare {
     super(size, size);
   }
 
+  //created a print() method using a nested loop to iterate over the rows & columns of the rectangle.
+  //adding an 'X' character.
+  print() {
+    for (let i = 0; i < this.height; i++) {
+      let row = "";
+      for (let j = 0; j < this.width; j++) {
+        row += "X";
+      }
+      console.log(row);
+    }
+  }
+
   //this will print the 'c' character
   charPrint(c) {
     if (c === undefined) {
-      c = "X";
-      for (let i = 0; i < this.height; i++) {
-        let row = "";
-        for (let j = 0; j < this.width; j++) {
-          row += "c";
-        }
+      c = "X"; // default to 'X' if c is undefined
+    }
+    for (let i = 0; i < this.height; i++) {
+      let row = "";
+      for (let j = 0; j < this.width; j++) {
+        row += `${c}`;
       }
+      console.log(row);
     }
   }
 }
