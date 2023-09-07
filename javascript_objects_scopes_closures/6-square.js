@@ -14,7 +14,7 @@ class Square extends newSquare {
       for (let i = 0; i < this.height; i++) {
         let row = "";
         for (let j = 0; j < this.width; j++) {
-          row += `${c}`;
+          row += "c";
         }
       }
     }
