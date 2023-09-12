@@ -12,5 +12,5 @@ req
 
   .on("data", (data, body) => {
     const response = JSON.parse(data, body);
-    console.log(response.Title);
+    console.log(response.titles);
   });
