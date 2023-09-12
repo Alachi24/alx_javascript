@@ -7,10 +7,10 @@ const apiUrl = "https://swapi-api.alx-tools.com/api/films/";
 const characterId = 18;
 
 //Make a get request to fetch data from API
-req.get(apiUrl).on((response) => {
+req(apiUrl, (error, response, body) => {
   //confirm is response is active(code:200)
-  if (response === 200) {
-    const data = response.data;
+  if (!error && response.statusCode === 200) {
+    const data = JSON.parse(body);
     let movieCount = 0;
 
     //loop through the films in the API
@@ -21,6 +21,6 @@ req.get(apiUrl).on((response) => {
     });
     console.log(`${movieCount}`);
   } else {
-    console.error("Failed to fetch data from API");
+    console.error("Failed to fetch data from API", error);
   }
 });
