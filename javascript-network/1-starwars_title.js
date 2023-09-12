@@ -8,7 +8,7 @@ const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
 //using "get" to access the url from the source
 req
-  .get(url, { encoding: "utf-8" })
+  .get(url)
 
   .on("data", (body) => {
     const response = JSON.parse(body);
