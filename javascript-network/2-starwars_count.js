@@ -19,5 +19,8 @@ req.get(apiUrl).on((response) => {
         movieCount++;
       }
     });
+    console.log(`${movieCount}`);
+  } else {
+    console.error("Failed to fetch data from API");
   }
 });
