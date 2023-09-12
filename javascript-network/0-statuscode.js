@@ -2,7 +2,7 @@
 //create a const of request and url
 const req = require("request");
 
-const url = "";
+const url = "https://intranet.alxswe.com/";
 
 //using "get" to access the url from the source
 req
