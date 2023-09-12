@@ -2,7 +2,7 @@
 //create a const of request and url
 const req = require("request");
 
-const id = process.argv[3];
+const id = process.argv[2];
 
 const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
