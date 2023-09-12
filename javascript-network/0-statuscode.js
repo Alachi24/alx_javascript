@@ -2,7 +2,7 @@
 //create a const of request and url
 const req = require("request");
 
-const url = "https://intranet.alxswe.com/";
+const url = process.argv[2];
 
 //using "get" to access the url from the source
 req
@@ -10,8 +10,4 @@ req
 
   .on("response", (response) => {
     console.log("code:", response.statusCode);
-  })
-
-  .on("error", (err) => {
-    console.log(err);
   });
