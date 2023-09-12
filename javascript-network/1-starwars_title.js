@@ -10,7 +10,7 @@ const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 req
   .get(url, { encoding: "utf-8" })
 
-  .on("data", (data, body) => {
-    const response = JSON.parse(data, body);
-    console.log(response.titles);
+  .on("data", (body) => {
+    const response = JSON.parse(body);
+    console.log(response.title);
   });
