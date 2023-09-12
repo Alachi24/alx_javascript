@@ -10,4 +10,8 @@ req
 
   .on("response", (response) => {
     console.log("code:", response.statusCode);
+  })
+
+  .on("error", (err) => {
+    console.log(err);
   });
