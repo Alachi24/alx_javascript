@@ -7,7 +7,7 @@ const id = process.argv[2];
 const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
 //using "get" to access the url from the source
-req(url).on("data", (body) => {
+req(url).on("body", (body) => {
   const response = JSON.parse(body);
   console.log(response.title);
 });
