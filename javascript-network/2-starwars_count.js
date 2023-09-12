@@ -2,7 +2,7 @@
 
 const req = require("request");
 
-const apiUrl = "https://swapi-api.alx-tools.com/api/films/";
+const apiUrl = process.argv[2];
 
 const characterId = 18;
 
