@@ -2,7 +2,7 @@
 
 const req = require("request");
 
-const apiUrl = process.argv[2];
+const apiUrl = "https://swapi-api.alx-tools.com/api/films/";
 
 const characterId = 18;
 
@@ -14,8 +14,8 @@ req(apiUrl, (error, response, body) => {
     let movieCount = 0;
 
     //loop through the films in the API
-    data.films.forEach((films) => {
-      if (films.character_ids.includes(characterId)) {
+    data.films.forEach((film) => {
+      if (film.character_ids.includes(characterId)) {
         movieCount++;
       }
     });
