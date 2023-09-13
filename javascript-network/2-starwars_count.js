@@ -14,7 +14,7 @@ req(url, (error, response, body) => {
   const films = data.results;
   let count = 0;
   const characterId = "18"; // Character ID for Wedge Antilles
-  const character = `https://swapi-api.alx-tools.com/api/people/${characterId}`;
+  const character = `https://swapi-api.alx-tools.com/api/people/${characterId}/`;
 
   for (const film of films) {
     if (film.characters.includes(character)) {
@@ -22,5 +22,5 @@ req(url, (error, response, body) => {
     }
   }
 
-  console.log(count);
+  console.log(`${count}`);
 });
