@@ -11,7 +11,7 @@ req(url, (error, response, body) => {
   }
 
   const data = JSON.parse(body);
-  const films = console.log(data.results);
+  const films = data.results;
   let count = 0;
   const characterId = "18"; // Character ID for Wedge Antilles
   const character = `https://swapi-api.alx-tools.com/api/people/${characterId}/`;
