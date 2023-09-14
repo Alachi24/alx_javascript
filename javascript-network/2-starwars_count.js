@@ -20,5 +20,5 @@ request(url, function (error, response, body) {
     }
   }
 
-  console.log(`The character 'Wedge Antilles' appears in ${count} movies.`);
+  console.log(`${count}`);
 });
