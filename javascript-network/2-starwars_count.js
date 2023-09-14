@@ -9,7 +9,7 @@ request(url, function (error, response, body) {
   const films = JSON.parse(body).results;
 
   let count = 0;
-  for (let i = 0; i < films.length; i++) {
+  for (let i = 0; i < 11; i++) {
     const characters = films[i].characters;
     if (
       characters.includes(
