@@ -15,7 +15,5 @@ request(url, function (error, response, body) {
       console.error(error);
       return;
     }
-
-    console.log(`The contents of ${url} have been saved to ${file_path}.`);
   });
 });
