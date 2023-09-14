@@ -18,7 +18,7 @@ req(url, (error, response, body) => {
 
   for (const film of films) {
     if (film.characters.includes(character)) {
-      count += 1;
+      count++;
     }
   }
 
