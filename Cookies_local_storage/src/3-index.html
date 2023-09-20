@@ -1,0 +1,61 @@
+<!-- Create Html page with DOM effect -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies</title>
+  </head>
+  <body>
+    <div id="loginForm">
+      <h2>Login Form</h2>
+      <input type="text" id="Firstname" placeholder="First Name" />
+      <input type="text" id="Email" placeholder="Email" />
+      <button onclick="setCookies()">Log me in</button>
+      <button onclick="showCookies()">Show the cookies</button>
+    </div>
+
+    <!-- in the js script, the functions made the work on html page more dynamic and realistic -->
+    <!-- trim(), this removes white characteristic -->
+    <!-- Removed the previous functions getCookies() & showCookies() -->
+    <!-- Added hideForm() to hide the form and deleteCookiesAndShowForm() to delete the two cookies -->
+    <script>
+      function showForm() {
+        const welcomeMessage = document.getElementById("welcomeMessage");
+        const loginForm = document.getElementById("loginForm");
+
+        if (welcomeMessage) {
+          welcomeMessage.remove();
+        }
+
+        loginForm.style.display = "block";
+      }
+
+      function hideForm() {
+        const loginForm = document.getElementById("loginForm");
+        loginForm.style.display = "none";
+      }
+
+      function deleteCookiesAndShowForm() {
+        document.cookie =
+          "firstname=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie =
+          "email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+        showForm();
+      }
+
+      function showWelcomeMessageOrForm() {
+        const firstname = getCookie("firstname");
+
+        if (firstname) {
+          const body = document.body;
+          body.innerHTML = `<h1>Welcome ${firstname} <a href="#" onclick="deleteCookiesAndShowForm(); hideWelcomeMessage(); showForm(); return false;" style="font-weight: normal; font-style: italic; margin-left: 10px;">(logout)</a></h1>`;
+        } else {
+          showForm();
+        }
+      }
+    </script>
+  </body>
+</html>
